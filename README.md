@@ -10,8 +10,10 @@ The user can:
 * Determine the x-axis and y-axis of the bar graph to display the desired information.
 
 ### Dataset
-The datasset used to create this project was sourced from Kaggle, a site comprised of users who upload datasets for public use. The user 'jessicali9530' along with
+The datasset used to create this project was sourced from Kaggle, a site comprised of users who upload datasets for public use. The user '[jessicali9530](https://www.kaggle.com/jessicali9530)' along with
 several other contributors listed in the dataset's page created the CSV files.
+
+The page to the dataset can be found [here.](https://www.kaggle.com/datasets/jessicali9530/animal-crossing-new-horizons-nookplaza-dataset)
 
 ### Instructions
 To begin using the application, the user must choose from the selection box what CSV file they would like to view. Once chosen, the table will display all the information
