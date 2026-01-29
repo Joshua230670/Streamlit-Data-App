@@ -4,7 +4,7 @@ import plotly.express as px
 import pandas as pd
 import os
 
-# Get ACNH Catalog
+# Get ACNH catalog dataset
 dataset_path = kagglehub.dataset_download("jessicali9530/animal-crossing-new-horizons-nookplaza-dataset")
 file_path = ("//Users/joshuaizquierdo/.cache/kagglehub/datasets/"
         "jessicali9530/animal-crossing-new-horizons-nookplaza-dataset/versions/3/")
@@ -15,7 +15,7 @@ for file in os.listdir(file_path):
 
 st.title("Animal Crossing New Horizons Catalog")
 
-# Lets user choose which file to view
+# Let user choose which file to view
 category = st.selectbox(
     "Choose a file containing the catalog of items.",
     file_list
@@ -34,6 +34,8 @@ with tab1:
 
     # Display .csv file as a table
     st.dataframe(acnh_df, hide_index=True, column_order=options)
+    st.info("This table displays all the information from the selected CSV file. "
+            "The columns shown can be filtered using the multiselect box above the table.")
 
 with tab2:
     col1, col2 = st.columns(2)
@@ -57,3 +59,5 @@ with tab2:
     )
 
     st.plotly_chart(fig1) # Display bar graph
+    st.info("This bar chart is used to display the correlation between certain columns. For example, having 'Name'"
+            "on the x-axis and 'Buy' on the y-axis will properly display the the price of each item in-game.")
