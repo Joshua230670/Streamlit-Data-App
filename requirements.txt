@@ -1,0 +1,6 @@
+The follow dependencies are required:
+* kagglehub
+* streamlit
+* plotly.express
+* pandas
+* os
