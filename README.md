@@ -1,6 +1,6 @@
 # Streamlit Data App
 
-The purpose of this application is to provide the user all the information about the catalog from the game 'Animal Crossing New Horizon' developed by Nintendo.
+The purpose of this application is to provide the user all the information about the catalogs from the game 'Animal Crossing New Horizons', developed by Nintendo.
 
 The user can:
 * Select the .csv file of their choice containing the category of catalog.
